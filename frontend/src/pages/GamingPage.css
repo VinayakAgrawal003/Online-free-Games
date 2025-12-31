@@ -1,0 +1,298 @@
+.cyber-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0a1628 0%, #1a2f4a 50%, #0f1e35 100%);
+  position: relative;
+}
+
+.page-content-wrapper {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gaming-page-container {
+  margin-top: 2rem;
+}
+
+.go-back-btn {
+  background: #1a2332;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.go-back-btn:hover {
+  background: #252f3f;
+}
+
+.gaming-content-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+  background: rgba(26, 35, 50, 0.4);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+/* Left Panel */
+.game-left-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-cover-card {
+  background: rgba(26, 35, 50, 0.6);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.game-cover-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.game-cover-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(138, 43, 226, 0.5);
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+}
+
+.game-cover-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.game-cover-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+}
+
+.game-title-left {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.developer-info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.developed-by {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.developer-username {
+  color: #4a90e2;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.developer-username:hover {
+  color: #5ba0f2;
+}
+
+/* Right Panel */
+.game-right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-title-uppercase {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Game Info Section */
+.game-info-section {
+  background: rgba(26, 35, 50, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.game-description-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.game-action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.rating-btn {
+  background: rgba(138, 43, 226, 0.3);
+  color: white;
+  border: 1px solid rgba(138, 43, 226, 0.5);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.rating-btn:hover {
+  background: rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+}
+
+.like-btn {
+  background: rgba(255, 20, 147, 0.3);
+  color: white;
+  border: 1px solid rgba(255, 20, 147, 0.5);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.like-btn:hover {
+  background: rgba(255, 20, 147, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Developer Section */
+.developer-section {
+  background: rgba(26, 35, 50, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.developer-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.developer-avatar-large {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(138, 43, 226, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 2px solid rgba(138, 43, 226, 0.5);
+}
+
+.developer-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.developer-name {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.follow-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.follow-btn:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+/* Reviews Section */
+.reviews-section {
+  background: rgba(26, 35, 50, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.reviews-stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star-outline {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.star-outline:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+.loading-state {
+  text-align: center;
+  padding: 3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 968px) {
+  .gaming-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-left-panel {
+    order: 2;
+  }
+
+  .game-right-panel {
+    order: 1;
+  }
+}
+
